@@ -104,7 +104,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background:black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -126,21 +126,223 @@ p {
     padding-right: 0;
 }
 
-footer {
-    width: 100%;
-    background: black;
+/* NEW CSS for INDEX page to add color to boxes */
+.middle-content .boxes .box:first-child{
+    background-color: teal;
 }
 
-footer nav {
-    width: 60%;
+.middle-content .boxes .box:nth-child(2){
+    background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(3){
+    background-color:cadetblue;
+}
+.middle-content .boxes .box:nth-child(4){
+    background-color:coral;
+}
+.middle-content .boxes .box:nth-child(5){
+    background-color: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6){
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7){
+    background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-child(8){
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9){
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10){
+    background-color: dodgerblue;
+}
+
+/* NEW CSS for navigation AND footer on all pages*/
+/* Navigation */
+.site-header {    
+    margin: 30px;
+}
+
+.site-nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    margin-left: 128px;
+    margin-right: 128px;
 }
 
-footer nav a {
-    color: white;
+.site-nav ul a{
     text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    size: 10px;
+    color: black;
+    transition: all 0.75s ease;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+a:active {
+    background-color: lightsalmon;
+}
+
+.intro-image{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+.site-footer {
+    margin: 30px;
+    background-color: black;
+}
+
+.footer-nav ul{
+    display: flex;
+}
+
+.footer-nav ul a{
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    size: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* CSS for ABOUT page */
+.about-start{
+    margin-bottom: 23px;
+    margin-left: 29px;
+}
+
+.about-start p{
+    padding-bottom: 20px;
+    border-bottom: black dashed 1px;
+}
+
+.middle-content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-box {
+    width: 50%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 46%;
+}
+
+.about-box h1 {
+    padding-top: 12px;
+}
+
+.about-box div {
+    margin-top: 10px;
+}
+
+.about-box div button {
+    height: 43px;
+    width: 107px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.about-box:nth-last-child(-n+2) {
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
+}
+
+.about-end {
+    margin-bottom: 23px;
+    margin-left: 29px;
+    padding-bottom: 10px;
+}
+
+
+/* PRODUCTS page */
+
+.intro-to-products {
+    display: flex;
+}
+
+.intro-to-products div{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.intro-to-products h1:first-of-type{
+    padding-top: 30px;
+    font-size: 50px; 
+    text-align: center;
+}
+
+.intro-to-products h1:last-of-type {
+    padding-top: 2px;
+    font-size: 50px; 
+}
+
+.intro-to-products button {
+    width: 74px;
+    height: 36px;
+    background-color: white;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+
+.middle-content-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-products {
+    display: flex;
+}
+
+.top-products div{
+    width: 50%;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+}
+
+.image {
+    padding-left: 35px;
+}
+
+.bottom-products {
+    display: flex;
+    margin-left: 33px;
+    justify-content: space-evenly;
+}
+
+.bottom-products div {
+    width: 32%;
+    flex: 1;
+    margin-left: 34px;
+    padding-top: 20px;
 }
